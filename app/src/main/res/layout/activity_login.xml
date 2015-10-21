@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip">
+
+    <ImageView
+        android:id="@+id/main_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="140dp"
+        android:maxHeight="140dp"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/capitalonelogo"
+        android:paddingBottom="24dp"
+        android:layout_gravity="center" />
+
+    <TextView android:id="@+id/loginLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginLabel"
+        android:layout_gravity="left"
+        android:textSize="24dip"/>
+    <EditText
+        android:id="@+id/emailBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/loginHint"
+        android:inputType="textEmailAddress" />
+    <TextView android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/passwordLabel"
+        android:paddingTop="16dp"
+        android:layout_gravity="left"
+        android:textSize="24dip"/>/>
+    <EditText
+        android:id="@+id/passwordBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/passwordHint"
+        android:inputType="textPassword" />
+    <!--<TextView android:id="@+id/accttext"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/accthint"-->
+        <!--android:paddingTop="16dp"-->
+        <!--android:layout_gravity="left" />-->
+    <!--ImageView android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="42dp"
+        android:maxHeight="42dp"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/blue"
+        android:layout_gravity="center_horizontal" /-->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/blue"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="login"/>
+    </GridLayout>
+
+</LinearLayout>

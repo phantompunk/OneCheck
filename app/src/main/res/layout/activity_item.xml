@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="160dp"
+        android:maxHeight="160dp"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/capitalonelogo"
+        android:paddingBottom="24dp"
+        android:layout_gravity="center" />
+
+    <TextView android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/productLabel"
+        android:layout_gravity="left"
+        android:textSize="24sp"/>
+    <EditText
+        android:id="@+id/productBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/productHint"
+        android:inputType="text" />
+    <TextView android:id="@+id/priceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/priceLabel"
+        android:paddingTop="16dp"
+        android:layout_gravity="left"
+        android:textSize="24sp"/>/>
+    <EditText
+        android:id="@+id/priceBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/priceHint"
+        android:inputType="numberDecimal" />
+    <TextView android:id="@+id/typeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/typeLabel"
+        android:paddingTop="16dp"
+        android:layout_gravity="left"
+        android:textSize="24sp"/>/>
+    <EditText
+        android:id="@+id/typeBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/typeHint"
+        android:inputType="textAutoComplete" />
+    <ImageView android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/seeresults"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:clickable="true"
+        android:onClick="results"/>
+</LinearLayout>
