@@ -7,4 +7,4 @@ login then tells us what purchase they are considering. We'll almost immedaitely
 their banking history through our intelligent decision algorithm and offer our wise suggestion based on the result.
 
 ## To-Do
-Background service that accepts a user_id and starts collecting data
+
